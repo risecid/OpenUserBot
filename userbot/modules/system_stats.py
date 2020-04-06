@@ -24,7 +24,7 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 async def sysdetails(sysd):
     """ For .sysd command, get system info using neofetch. """
     try:
-        neo = "neofetch --ascii_distro ubuntu_old"
+        neo = "neofetch --stdout"
         fetch = await asyncrunapp(
             neo,
             stdout=asyncPIPE,
