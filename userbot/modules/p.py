@@ -9,7 +9,7 @@ from userbot.events import register
 async def typewriter(typew):
 	message = typew.pattern_match.group(1)
 	sleep(1)
-	await typew.edit("`Astagfirulloh...`")
+	await typew.edit("`Astaghfirulloh Ucapkan salam Dong...`")
 	sleep(1)
 	await typew.edit("`Assalamualaikum`")
 # Create by myself @RiSecID
@@ -18,7 +18,7 @@ async def typewriter(typew):
 async def typewriter(typew):
 	message = typew.pattern_match.group(1)
 	sleep(1)
-	await typew.edit("`Astagfirulloh...`")
+	await typew.edit("`Astaghfirulloh Ucapkan salam Dong...`")
 	sleep(1)
 	await typew.edit("`Assalamualaikum`")
 # Create by myself @RiSecID
