@@ -1021,7 +1021,7 @@ async def clock(event):
     except BaseException:
         return
 
-@register(outgoing=True, pattern="^.laplip$")
+@register(outgoing=True, pattern="^.laplip2$")
 async def clock(event):
     deq = deque(list("🔴🔵🔴🔵🔴🔵🔴🔵🔴🔵\n🔵🔴🔵🔴🔵🔴🔵🔴🔵🔴\n🔴🔵🔴🔵🔴🔵🔴🔵🔴🔵\n🔵🔴🔵🔴🔵🔴🔵🔴🔵🔴"))
     try:
