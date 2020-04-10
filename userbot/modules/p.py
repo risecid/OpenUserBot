@@ -24,11 +24,3 @@ async def typewriter(typew):
 # Create by myself @RiSecID
 
 
-@register(outgoing=True, pattern='^kabeh(?: |$)(.*)')
-async def typewriter(typew):
-	message = typew.pattern_match.group(1)
-	sleep(1)
-	await typew.edit("@all")
-# Create by myself @RiSecID
-
-
