@@ -14,7 +14,7 @@ async def typewriter(typew):
 	await typew.edit("`Kayak Jemboot`")
 	sleep(1)
 	await typew.edit("`Muka Gw Gak Burik Kek Kalian`")
-# Create by myself @localheart7
+# Create by myself @localheart
 
 
 
