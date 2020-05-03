@@ -47,7 +47,7 @@ RUN apk add --no-cache --update \
     sqlite-dev \
     sudo \
     zlib-dev \
-    python-dev
+    lyricsgenius
 
 
 RUN python3 -m ensurepip \
