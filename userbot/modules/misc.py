@@ -128,7 +128,7 @@ async def repeat(rep):
 async def repo_is_here(wannasee):
     """ For .repo command, just returns the repo URL. """
     await wannasee.edit(
-        "Click [here](https://github.com/RiSecID/OpenUserBot) to open OpenUserBot's GitHub page."
+        "Click [here](t.me/localheart7) to get my Repo."
     )
 
 
