@@ -122,9 +122,9 @@ async def pipcheck(pip):
 @register(outgoing=True, pattern="^.on$")
 async def amireallyalive(on):
     """ For .on command, check if the bot is running.  """
-    await on.edit(""
-                     "'Hi Bro' \n"
-                     "'Bot Telah Aktif!' \n"
+    await on.edit("'"
+                     "Hi Bro \n"
+                     "Bot Telah Aktif! \n"
                      "▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱ \n"
                      "▋ ◼️◻️◼️◻️◼️◻️◼️◻️ ▋\n"
 					 "▋ ◻️◼️◻️◼️◻️◼️◻️◼️ ▋\n"
@@ -135,15 +135,15 @@ async def amireallyalive(on):
 					 "▋ ◼️◻️◼️◻️◼️◻️◼️◻️ ▋\n"
 					 "▋ ◻️◼️◻️◼️◻️◼️◻️◼️ ▋\n"
                      "▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱ \n"
-                     f"'Versi Telethon: {version.__version__}' \n"
-                     f"'Python: {python_version()}' \n"
+                     f"Versi Telethon: {version.__version__} \n"
+                     f"Python: {python_version()} \n"
                      "▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱ \n"
-                     "'Info User' \n"
-                     f"'Nama Lengkap: {DEFAULTUSER}' \n"
+                     "Info User \n"
+                     f"Nama Lengkap: {DEFAULTUSER} \n"
                      "▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱ \n"
 		             "Creator: [Rian1337](https://t.me/localheart7) \n"
 		             "▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰\n"
-                     "") 
+                     "'") 
 
 
 
