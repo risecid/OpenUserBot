@@ -122,8 +122,8 @@ async def pipcheck(pip):
 @register(outgoing=True, pattern="^.on$")
 async def amireallyalive(on):
     """ For .on command, check if the bot is running.  """
-    await on.edit("`"
-                     "Hi Bro \n"
+    await on.edit(""
+                     "`Hi Bro` \n"
                      "Bot Telah Aktif! \n"
                      "▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱ \n"
                      "▋ ◼️◻️◼️◻️◼️◻️◼️◻️ ▋\n"
@@ -143,7 +143,7 @@ async def amireallyalive(on):
                      "▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱ \n"
 		             "Creator: [Rian1337](https://t.me/localheart7) \n"
 		             "▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰\n"
-                     "`") 
+                     "") 
 
 
 
