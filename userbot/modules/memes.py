@@ -962,6 +962,7 @@ async def iqless(e):
     await e.edit("♿")
 
 
+
 @register(outgoing=True, pattern="^.moon$")
 async def moon(event):
     deq = deque(list("🌗🌘🌑🌒🌓🌔🌕🌖"))
@@ -973,6 +974,7 @@ async def moon(event):
     except BaseException:
         return
         
+
         
 @register(outgoing=True, pattern="^.earth$")
 async def moon(event):
@@ -999,6 +1001,8 @@ async def clock(event):
     except BaseException:
         return
 
+
+
 @register(outgoing=True, pattern="^.cloud$")
 async def clock(event):
     deq = deque(list("☀️🌤️⛅🌥️🌦️☁️🌨️⛈️🌩️🌧️"))
@@ -1009,6 +1013,8 @@ async def clock(event):
             deq.rotate(1)
     except BaseException:
         return
+
+
 
 @register(outgoing=True, pattern="^.laplip$")
 async def clock(event):
@@ -1021,6 +1027,8 @@ async def clock(event):
     except BaseException:
         return
 
+
+
 @register(outgoing=True, pattern="^.laplip2$")
 async def clock(event):
     deq = deque(list("🔴🔵🔴🔵🔴🔵🔴🔵🔵\n🔵🔴🔵🔴🔵🔴🔵🔴🔵🔴\n🔴🔵🔴🔵🔴🔵🔴🔵🔴🔵\n🔵🔴🔵🔴🔵🔴🔵🔴🔵🔴"))
@@ -1031,6 +1039,8 @@ async def clock(event):
             deq.rotate(1)
     except BaseException:
         return
+
+
 
 
 @register(outgoing=True, pattern="^.mock(?: |$)(.*)")
