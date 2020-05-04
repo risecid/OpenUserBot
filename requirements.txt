@@ -26,7 +26,6 @@ pybase64>=0.4.0
 pylast
 pySmartDL
 python-barcode
-python-dev
 python-dotenv
 youtube-dl
 pytz
