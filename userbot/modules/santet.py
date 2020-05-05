@@ -12,8 +12,6 @@ async def typewriter(typew):
 	sleep(5)
 	await typew.edit("`Sedang Mencari Informasi Korban...\n50%!`")
 	sleep(5)
-
-	sleep(5)
 	await typew.edit("`Informasi Ditemukan...\nMengirim Santet Diproses!`")
 	sleep(5)
 	await typew.edit("0%")
