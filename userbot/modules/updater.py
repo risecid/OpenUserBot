@@ -101,7 +101,7 @@ async def upstream(ups):
 
     if not changelog and not force_update:
         await ups.edit(
-            f'\n`Your BOT is`  **up-to-date**  `with`  **{ac_br}**\n')
+            f'\n`Bot Kamu Sudah`  **Versi Terbaru**  `Dengan`  **{ac_br}**\n')
         repo.__del__()
         return
 
