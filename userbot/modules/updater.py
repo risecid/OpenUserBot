@@ -47,7 +47,7 @@ async def update_requirements():
 @register(outgoing=True, pattern="^\.update(?: |$)(.*)")
 async def upstream(ups):
     "For .update command, check if the bot is up to date, update if specified"
-    await ups.edit("`Checking for updates, please wait....`")
+    await ups.edit("`Sedang Mengecek Bot, Tunggu Sebentar....`")
     conf = ups.pattern_match.group(1)
     off_repo = UPSTREAM_REPO_URL
     force_update = False
@@ -106,9 +106,9 @@ async def upstream(ups):
         return
 
     if conf != "now" and not force_update:
-        changelog_str = f'**New UPDATE available for [{ac_br}]:\n\nCHANGELOG:**\n`{changelog}`'
+        changelog_str = f'**Tersedia Pembaruan Untuk [{ac_br}]:\n\nLog Perubahan:**\n`{changelog}`'
         if len(changelog_str) > 4096:
-            await ups.edit("`Changelog is too big, view the file to see it.`")
+            await ups.edit("`Log Perubahan Terlalu Besar, Di Jadikan Bentuk File Untuk Melihat.`")
             file = open("output.txt", "w+")
             file.write(changelog_str)
             file.close()
@@ -127,7 +127,7 @@ async def upstream(ups):
         await ups.edit(
             '`Force-Syncing to latest stable userbot code, please wait...`')
     else:
-        await ups.edit('`Updating userbot, please wait....`')
+        await ups.edit('`Memperbarui Bot, Tunggu Sebentar....`')
     # We're in a Heroku Dyno, handle it's memez.
     if HEROKU_APIKEY is not None:
         import heroku3
@@ -168,8 +168,8 @@ async def upstream(ups):
             await ups.edit(f'{txt}\n`Here is the error log:\n{error}`')
             repo.__del__()
             return
-        await ups.edit('`Successfully Updated!\n'
-                       'Restarting, please wait...`')
+        await ups.edit('`Berhasil Di Perbarui!\n'
+                       'Merestart, Tunggu Sebentar...`')
     else:
         # Classic Updater, pretty straightforward.
         try:
@@ -177,8 +177,8 @@ async def upstream(ups):
         except GitCommandError:
             repo.git.reset("--hard", "FETCH_HEAD")
         reqs_upgrade = await update_requirements()
-        await ups.edit('`Successfully Updated!\n'
-                       'Bot is restarting... Wait for a second!`')
+        await ups.edit('`Berhasil Di Perbarui!\n'
+                       'Merestart Bot... Tunggu Beberapa Detik!`')
         # Spin a new instance of bot
         args = [sys.executable, "-m", "userbot"]
         execle(sys.executable, *args, environ)
