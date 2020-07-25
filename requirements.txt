@@ -43,3 +43,4 @@ covid
 lyricsgenius
 git+https://github.com/johnwmillr/LyricsGenius.git
 telegraph
+validators
